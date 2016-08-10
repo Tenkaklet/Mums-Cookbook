@@ -1,0 +1,180 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$font-family-base: 'Lato', sans-serif !default;
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+
+
+.wide-input {
+  height: 20px;
+  margin: 10px 0;
+}
+
+$bg: #F3EFEF;
+
+.bar {
+  .buttons {
+    margin-right: 6px;
+  }
+}
+.menuBtn {
+  border: none;
+}
+form {
+  width: 100%;
+}
+
+.pane {
+  background-image: url('../img/BG.png');
+}
+
+a {
+  color: #000;
+}
+
+// Search + Empty Page
+.emptyPage {
+  background-color: #F3EFEF;
+  width: 55%;
+  position: fixed;
+  top: 40vh;
+  left: 20vw;
+  padding: 10px;
+  border-radius: 4px;
+  .content {
+    margin: 0 auto;
+    width: 120%;
+    .text {
+      width: 60%;
+      text-align: center;
+      display: inline-block;
+      h5 {
+        line-height: 1.5;
+      }
+    }
+    img {
+      margin-top: 20px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+
+// When not empty search...
+ul.rating {
+  li {
+    display: inline-block;
+    i {
+      color: #DC1F1F;
+    }
+  }
+}
+
+
+//Food Items
+.foodItems {
+  border-radius: 4px;
+  margin-bottom: 4px;
+  h2 {
+    font-weight: bold;
+  }
+}
+
+// Specific Recipe
+
+#SpecificRecipe {
+  section {
+    background-color: $bg;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px #000;
+  }
+  #top {
+    padding: 20px;
+    #RecipeHeader {
+      border-radius: 2px;
+      background-size: cover;
+      height: 210px;
+      width: 100%;
+      .name {
+        position: fixed;
+        top: 190px;
+        left: 20px;
+        width: 84%;
+        font-size: 100%;
+        padding: 4px;
+        height: 30px;
+        background-color: rgba(16,16,16,0.5);
+        color: #EEE8E8;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+  }
+  #middle {
+    margin: 15px 0;
+    padding: 20px;
+    .selections {
+      list-style: none;
+      .select {
+        display: inline-block;
+        margin-right: 45px;
+        .meta {
+          vertical-align: super;
+          padding: 4px;
+        }
+        i.icon {
+          font-size: 32px;
+        }
+        i.ion-knife {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  #ingredients {
+    .ingredientsList {
+      li {
+        margin: 10px 0;
+        padding: 4px;
+      }
+    }
+  }
+}
+
+#savedRecipes {
+  section {
+    background-color: $bg;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px #000;
+  }
+}
+
+
+.favorite {
+  color: #DC1F1F;
+}
+.title {
+  text-align: center;
+  padding: 6px;
+  font-weight: bold;
+}

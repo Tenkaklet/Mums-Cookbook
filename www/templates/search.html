@@ -1,0 +1,22 @@
+<ion-view>
+  <ion-content class="padding">
+      <div class="emptyPage" ng-show="emptyPage">
+          <div class="content">
+              <div class="text">
+                  <h5>
+                      Let’s get cooking
+                      search in the bar above to
+                      get started
+                  </h5>
+              </div>
+              <img src="img/curved_arrow.png">
+          </div>
+      </div>
+    <a class="item foodItems item-thumbnail-left" ng-href="#/menu/search/{{foodItem.id}}" ng-repeat="foodItem in foodList">
+      <img ng-src="{{foodItem.imageUrlsBySize[90]}}">
+      <h2>{{foodItem.recipeName}}</h2>
+      <rating ng-model="foodItem.rating"></rating>
+      <!-- <p>Rating: {{foodItem.rating}}</p> -->
+    </a>
+  </ion-content>
+</ion-view>

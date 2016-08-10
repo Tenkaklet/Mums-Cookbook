@@ -1,0 +1,26 @@
+<ion-view view-title="SpecificRecipe">
+  <ion-content class="padding" id="SpecificRecipe">
+    <section id="top">
+        <div id="RecipeHeader">
+            <h3 class="name">{{name}}</h3>
+        </div>
+    </section>
+    <section id="middle">
+        <ul class="selections">
+            <li class="select"><i class="icon ion-ios-time-outline"></i><span class="meta">{{time}}</span></li>
+            <li class="select"><i class="icon ion-knife"></i><i class="icon ion-fork"></i><span class="meta">{{servings}}</span></li>
+            <li class="select"><a ng-click="isFavorite(name)"><i ng-class="!favorite ? 'icon ion-ios-star-outline' : 'icon ion-ios-star favorite'"></i></a></li>
+        </ul>
+    </section>
+    <section id="ingredients">
+        <h4 class="title">Ingredients</h4>
+        <ul class="ingredientsList" ng-repeat="ingredient in ingredients">
+            <li>{{ingredient}}</li>
+        </ul>
+    </section>
+    <a class="button button-block showBtn" ng-click="showRecipe()">Show Recipe</a>
+  </ion-content>
+</ion-view>
+
+
+<!-- icon ion-ios-star-outline -->
